@@ -1,0 +1,194 @@
+@rem:50rem;
+*{
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+.wrap{
+  width: 100%;
+  height: 100%;
+  background: url("../image/background.png") repeat-y center;
+  background-size: 15rem;
+}
+header{
+  width: 750/@rem;
+  height: 120/@rem;
+  .title{
+    padding-top: 32/@rem;
+    text-align: center;
+    img{
+      width:183/@rem;
+    }
+  }
+  .advertising{
+    font-size: 40/@rem;
+    text-align: center;
+    margin-top: 8/@rem;
+    img{
+      width:484/@rem;
+    }
+  }
+}
+//大图片
+
+.content{
+  width: 482/@rem;
+  //height: 422/@rem;
+  margin: 30/@rem auto 0;
+  .car{
+    width: 480/@rem;
+    height: 326/@rem;
+    font-size: 0;
+    border: 2px solid transparent;
+    border-image:url(../image/boder.png) 2 2 stretch;
+    -webkit-border-image:url(../image/boder.png) 2 2 stretch;
+    img{
+      width: 480/@rem;
+      height: 326/@rem;
+    }
+  }
+  #button{
+    margin: 20/@rem auto;
+    font-size: 0;
+    img{
+      width: 487/@rem;
+    }
+  }
+}
+//初始页面的样式
+.footer{
+  margin: 32/@rem auto 0;
+  width: 480/@rem;
+  height: 340/@rem;
+  .main{
+    width: 480/@rem;
+    height: 210/@rem;
+    img{
+      width: 350/@rem;
+      height: 210/@rem;
+    }
+    .introduce{
+      float: right;
+      width: 130/@rem;
+      height: 210/@rem;
+      background: #d3b167;
+      font-size: 0.5rem;
+      color: white;
+    }
+  }
+  .select{
+    width: 100%;
+    height: 130/@rem;
+    .cars{
+      float: left;
+      height: 130/@rem;
+      width: 160/@rem;
+      text-align: center;
+      img{
+        height: 130/@rem;
+        width: 160/@rem;
+      }
+    }
+    .selected{
+      box-sizing: border-box;
+      height: 130/@rem;
+      width: 160/@rem;
+      border: 5/@rem solid #d3b167;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.foot{
+  margin: 0 auto;
+  width: 480/@rem;
+  img{
+    width: 480/@rem;
+  }
+}
+//识别结果
+.result{
+  width: 480/@rem;
+  height: 440/@rem;
+  margin: 0 auto;
+  position: relative;
+  .font{
+    position: absolute;
+    width: 480/@rem;
+    text-align: center;
+    color: white;
+    transform: rotate(8deg);
+    z-index: 10;
+  }
+  .car-name{
+    top: 65/@rem;
+  }
+  .car-v{
+    top: 210/@rem;
+    font-size: 0.8rem;
+  }
+  .car-last{
+    padding: 0 10/@rem;
+    top: 355/@rem;
+    font-size: 0.2rem;
+    transform: scale(0.9) rotate(8deg);
+
+  }
+
+  .bg{
+    width: 480/@rem;
+    height: 145/@rem;
+    position: absolute;
+  }
+  .bg1{
+    background: url("../image/1.png") no-repeat center;
+    background-size: 480/@rem;
+    top: 20/@rem;
+    z-index: 5;
+  }
+  .bg2{
+    background: url("../image/2.png") no-repeat center;
+    background-size: 460/@rem;
+    top: 20/@rem;
+    z-index: 4;
+  }
+  .bg3{
+    background: url("../image/3.png") no-repeat center;
+    background-size: 440/@rem;
+    top: 165/@rem;
+    z-index: 3;
+  }
+  .shadow{
+    display: none;
+    width: 480/@rem;
+    transition: 0.3s;
+    height: 160/@rem;
+    position: absolute;
+    z-index: 1;
+  }
+  .shadow1{
+    background: url("../image/shadow1.png") no-repeat center;
+    background-size: 460/@rem;
+    top: 85/@rem;
+  }
+  .shadow2{
+    background: url("../image/shadow2.png") no-repeat center;
+    background-size: 440/@rem;
+    top: 230/@rem;
+  }
+}
+.hide{
+  display: none;
+}
+.down{
+  transition: 0.5s;
+
+  transform: translateY(2.9rem);
+}

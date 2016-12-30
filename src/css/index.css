@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: url("../image/background.png") repeat-y center;
+  background-size: 15rem;
+}
+header {
+  width: 15rem;
+  height: 2.4rem;
+}
+header .title {
+  padding-top: 0.64rem;
+  text-align: center;
+}
+header .title img {
+  width: 3.66rem;
+}
+header .advertising {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.16rem;
+}
+header .advertising img {
+  width: 9.68rem;
+}
+.content {
+  width: 9.64rem;
+  margin: 0.6rem auto 0;
+}
+.content .car {
+  width: 9.6rem;
+  height: 6.52rem;
+  font-size: 0;
+  border: 2px solid transparent;
+  border-image: url(../image/boder.png) 2 2 stretch;
+  -webkit-border-image: url(../image/boder.png) 2 2 stretch;
+}
+.content .car img {
+  width: 9.6rem;
+  height: 6.52rem;
+}
+.content #button {
+  margin: 0.4rem auto;
+  font-size: 0;
+}
+.content #button img {
+  width: 9.74rem;
+}
+.footer {
+  margin: 0.64rem auto 0;
+  width: 9.6rem;
+  height: 6.8rem;
+}
+.footer .main {
+  width: 9.6rem;
+  height: 4.2rem;
+}
+.footer .main img {
+  width: 7rem;
+  height: 4.2rem;
+}
+.footer .main .introduce {
+  float: right;
+  width: 2.6rem;
+  height: 4.2rem;
+  background: #d3b167;
+  font-size: 0.5rem;
+  color: white;
+}
+.footer .select {
+  width: 100%;
+  height: 2.6rem;
+}
+.footer .select .cars {
+  float: left;
+  height: 2.6rem;
+  width: 3.2rem;
+  text-align: center;
+}
+.footer .select .cars img {
+  height: 2.6rem;
+  width: 3.2rem;
+}
+.footer .select .selected {
+  box-sizing: border-box;
+  height: 2.6rem;
+  width: 3.2rem;
+  border: 0.1rem solid #d3b167;
+}
+.footer .select .selected img {
+  width: 100%;
+  height: 100%;
+}
+.foot {
+  margin: 0 auto;
+  width: 9.6rem;
+}
+.foot img {
+  width: 9.6rem;
+}
+.result {
+  width: 9.6rem;
+  height: 8.8rem;
+  margin: 0 auto;
+  position: relative;
+}
+.result .font {
+  position: absolute;
+  width: 9.6rem;
+  text-align: center;
+  color: white;
+  transform: rotate(8deg);
+  z-index: 10;
+}
+.result .car-name {
+  top: 1.3rem;
+}
+.result .car-v {
+  top: 4.2rem;
+  font-size: 0.8rem;
+}
+.result .car-last {
+  padding: 0 0.2rem;
+  top: 7.1rem;
+  font-size: 0.2rem;
+  transform: scale(0.9) rotate(8deg);
+}
+.result .bg {
+  width: 9.6rem;
+  height: 2.9rem;
+  position: absolute;
+}
+.result .bg1 {
+  background: url("../image/1.png") no-repeat center;
+  background-size: 9.6rem;
+  top: 0.4rem;
+  z-index: 5;
+}
+.result .bg2 {
+  background: url("../image/2.png") no-repeat center;
+  background-size: 9.2rem;
+  top: 0.4rem;
+  z-index: 4;
+}
+.result .bg3 {
+  background: url("../image/3.png") no-repeat center;
+  background-size: 8.8rem;
+  top: 3.3rem;
+  z-index: 3;
+}
+.result .shadow {
+  display: none;
+  width: 9.6rem;
+  transition: 0.3s;
+  height: 3.2rem;
+  position: absolute;
+  z-index: 1;
+}
+.result .shadow1 {
+  background: url("../image/shadow1.png") no-repeat center;
+  background-size: 9.2rem;
+  top: 1.7rem;
+}
+.result .shadow2 {
+  background: url("../image/shadow2.png") no-repeat center;
+  background-size: 8.8rem;
+  top: 4.6rem;
+}
+.hide {
+  display: none;
+}
+.down {
+  transition: 0.5s;
+  transform: translateY(2.9rem);
+}
