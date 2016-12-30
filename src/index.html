@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>撞撞明星脸</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="mincss/index.css"/>
+    <script>
+        (function(){
+            var width = document.documentElement.clientWidth;
+            var html = document.querySelector("html");
+            html.style.fontSize=width/15+"px";
+        })();
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <img src="image/title.png" alt="撞撞明星脸">
+    </header>
+    <div class="photoes">
+        <div class="red">
+            <div class="beard"><img src="image/beard-red.png"  alt="云识图"></div>
+            <div class="star"><img src="image/star.png" alt="云识图"></div>
+        </div>
+        <div class="yellow">
+            <div class="beard"><img src="image/beard-yellow.png"  alt="云识图"></div>
+            <div class="myphoto"><img src="image/mine.png" alt="云识图"></div>
+        </div>
+    </div>
+    <div id="camera">
+        <div class="top">
+            <img src="image/photograph.png" alt="撞撞明星脸">
+        </div>
+        <div class="bottom">
+            <img src="image/photo.png" alt="撞撞明星脸">
+        </div>
+    </div>
+    <div class="content">
+        <!--不服换个<br>姿势重来-->
+        <div class="title">赶快试试吧！</div>
+        <img class="girl" src="image/girl.png" alt="撞撞明星脸">
+        <div class="main">
+            <div class="result ">
+                <div class="name">张靓颖</div>
+                <div class="similar">相似度<span>70%</span></div>
+                <div class="information">明星介绍明星介绍明星介绍明星介绍明星介绍明星介绍明星介绍</div>
+                <div class="evaluate">别笑！就是你，眉清目秀，唇红齿白的，这是要犯桃花的节奏呀，赶快分享让大家知道。</div>
+                <div class="share ">
+            </div>
+            <div class="introduce hide">
+                想知道你多美么？<br>
+                想看看你最像哪个明星么？<br>
+                全智能识别，看看你撞脸哪个明星，<br>
+                认识你另一面的美！<br>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+    <div class="bounced">
+        <div class="phot">
+            <img src="image/cemare.png" class="photo1" alt="撞撞明星脸"><img src="image/photo1.png" class="photo2" alt="撞撞明星脸">
+        </div>
+        <div class="came">
+            <img src="image/select.png" class="photo1" alt="撞撞明星脸"><img src="image/photo2.png" class="photo2" alt="撞撞明星脸">
+        </div>
+    </div>
+</div>
+<div id="load" class="hide">
+    <img src="image/load.png" alt="撞撞明星脸">
+</div>
+<div id="loading" class="hide">
+    <span></span><img src="image/loading.gif" width="100px">
+</div>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

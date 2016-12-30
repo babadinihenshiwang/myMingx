@@ -1,0 +1,46 @@
+blockquote,body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0;font-family:'等线 Light'}
+body{background:url(../image/background.png) repeat-y center top;background-size:100%}
+.wrap{width:15rem;height:26.68rem;position:relative;overflow:hidden}
+header{width:15rem;height:3.92rem}
+header img{width:11.12rem;margin:.8rem 0 0 3rem}
+.photoes{width:15rem;height:10.08rem;position:relative}
+.photoes .red{width:8.8rem;height:10.08rem;background:url(../image/red.png) no-repeat center;background-size:8.8rem 10.08rem}
+.photoes .red .beard{width:5.56rem;height:2.26rem;position:absolute;left:2.1rem;z-index:2}
+.photoes .red .beard img{width:5.56rem}
+.photoes .red .star{transform:rotate(-11deg);width:6.28rem;height:6.4rem;background:#bfe;position:absolute;top:1.32rem;left:.94rem;z-index:1}
+.photoes .red .star img{width:6.28rem;height:6.4rem}
+.photoes .yellow{width:8.82rem;height:9.98rem;position:absolute;top:1.4rem;right:0;z-index:2;background:url(../image/yellow.png) no-repeat center;background-size:8.82rem 9.98rem}
+.photoes .yellow .beard{width:4.72rem;height:2.6rem;position:absolute;top:.1rem;right:2.2rem;z-index:3}
+.photoes .yellow .beard img{width:4.72rem}
+.photoes .yellow .myphoto{transform:rotate(25.5deg);width:5.74rem;height:5.74rem;background:#bfe;position:absolute;top:1.36rem;right:1.2rem;z-index:1}
+.photoes .yellow .myphoto img{width:5.74rem;height:5.74rem}
+#camera{position:absolute;top:15rem;right:.8rem;z-index:10}
+#camera .top{width:3.38rem;height:2.82rem;background:url(../image/cameraS.png) no-repeat center;background-size:3.38rem 2.82rem}
+#camera .top img{width:2.48rem;margin:1.6rem .44rem 0}
+#camera .bottom{width:3.38rem;height:2.14rem;overflow:hidden;background:url(../image/cameraX.png) no-repeat top center;background-size:3.38rem .34rem}
+#camera .bottom img{width:2.08rem;margin:0 .66rem;animation:myanimation 4s linear infinite alternate}
+.content{font-weight:600;font-size:.8rem;width:15rem;height:12.68rem;background:url(../image/backg.png) no-repeat bottom center;background-size:15rem;position:relative}
+.content .title{position:absolute;left:4.1rem;top:.4rem;box-sizing:border-box;width:6.14rem;height:4.06rem;background:url(../image/dialog.png) no-repeat center;background-size:6.14rem 4.06rem;z-index:9;padding:1.4rem 0 0 1.8rem}
+.content .main{position:absolute;left:5.6rem;top:4.8rem}
+.content .main .result div{margin-top:.2rem}
+.content .main .introduce{width:8rem;margin-top:1rem;line-height:.8rem;font-size:.6rem;letter-spacing:.2rem}
+.content img{width:4.7rem;height:12.88rem;position:absolute;left:.4rem;top:-.2rem}
+.content .share{background:url(../image/share.png) no-repeat center;background-size:6.3rem 2.54rem;padding:0 0 0 .3rem;position:absolute;bottom:0;right:.72rem;width:6.3rem;height:2.54rem;font-size:.4rem;font-weight:700}
+.content .share div{margin-top:.2rem;margin-left:.1rem}
+.content .share .foot-bottom{margin-left:.8rem}
+.bounced{position:absolute;top:26.68rem;left:0;width:15rem;height:5.32rem;transition:.3s;transform:translateZ(0);background:url(../image/background2.png) no-repeat center;background-size:15rem 5.32rem}
+.bounced .photo1{width:2.3rem}
+.bounced .photo2{width:3.76rem}
+.bounced .phot{float:left;margin:1.6rem 2.6rem 0 2rem;width:4.08rem}
+.bounced .phot img{display:block;margin:.4rem auto}
+.bounced .came{float:left;margin:.6rem 0 0 0;width:4.08rem}
+.bounced .came img{display:block;margin:.4rem auto}
+.hide{display:none}
+.translate{transform:translateY(-5.32rem)}
+#load{width:15rem;height:26.68rem;position:fixed;top:0;left:0;text-align:center;background:rgba(0,0,0,.9);z-index:12}
+#load img{width:13.08rem;height:12.76rem}
+@keyframes myanimation{0%{transform:translateY(-40px)}
+40%{transform:translateY(0)}
+60%{transform:translateY(0)}
+100%{transform:translateY(-40px)}
+}

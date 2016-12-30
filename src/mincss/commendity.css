@@ -1,0 +1,24 @@
+blockquote,body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0;font-family:'等线 Light'}
+body,html{width:15rem;overflow-x:hidden}
+nav{height:15rem;width:15rem;position:relative;overflow:hidden}
+.pictures{height:15rem;white-space:nowrap;position:absolute;left:-15rem;transform:translateZ(.00002rem)}
+.pictures img{height:15rem;width:15rem}
+.dots{overflow:hidden;position:absolute;bottom:.7rem}
+.dot{width:.28rem;height:.28rem;border-radius:.14rem;margin:0 .1rem;background:rgba(255,255,255,.3);float:left}
+.selected{background:#fff}
+header{padding:1.44rem 0rem 1.2rem;margin:0 .72rem .02rem;width:13.56rem;height:3rem;position:relative;border-bottom:.02rem solid #919191;box-shadow:0 .02rem .02rem #d7d7d7}
+.price{position:absolute;left:0rem;top:3.22rem;color:#df4365;font:700 30/50rem '黑体'}
+.price span{font:100 30/50rem '黑体';color:#000}
+.origin{font:26/50rem '黑体';color:#bcbcbc;position:absolute;top:3.96rem;left:0rem}
+.buy{height:1.2rem;width:3.6rem;position:absolute;bottom:1.2rem;right:0rem;background:#df4365;border-radius:.6rem;text-align:center}
+.buy a{color:#fff;text-decoration:none;font:26/50rem/60/50rem '等线 Light'}
+.information{width:13.56rem;margin:0 .72rem .02rem;border-bottom:.02rem solid #919191;box-shadow:0 .02rem .02rem #d7d7d7}
+h2{width:100%;height:1.8rem;color:#df4365;margin-bottom:.02rem;font:28/50rem/90/50rem "黑体";border-bottom:.02rem solid #919191;box-shadow:0 .02rem .02rem #d7d7d7}
+ul li{list-style:none;height:1.08rem;font:26/50rem/54/50rem '黑体';-webkit-text-size-adjust:100%}
+ul{padding:.52rem 0 .84rem}
+.picture-show{width:13.6rem;margin:0 .7rem 2rem;border-bottom:.02rem solid #919191;box-shadow:0 .02rem .02rem #d7d7d7}
+.image{width:13.6rem;height:13.64rem;margin-top:.8p}
+.image img{width:100%;height:100%}
+#top{position:fixed;bottom:5.6rem;right:.72rem;width:1.2rem;height:1.2rem;transition:.5s;border-radius:.6rem;text-align:center;background:rgba(255,255,255,.5)}
+#top img{margin-top:.16rem;width:.76rem}
+.hide{display:none}

@@ -1,0 +1,291 @@
+@rem:50rem;
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0;
+  font-family:'等线 Light'; }
+
+body{
+  background: url("../image/background.png") repeat-y center top;
+  background-size: 100%;
+}
+.wrap{
+  width: 750/@rem;
+  height: 1244/@rem;
+  position: relative;
+}
+
+header{
+  width: 750/@rem;
+  height: 196/@rem;
+  img{
+    width: 556/@rem;
+    margin: 40/@rem 0 0 150/@rem;
+  }
+}
+
+.photoes{
+  width: 750/@rem;
+  height: 504/@rem;
+  position: relative;
+  .red{
+    width: 440/@rem;
+    height: 504/@rem;
+    background: url("../image/red.png") no-repeat center;
+    background-size: 440/@rem 504/@rem;
+    .beard{
+      width: 278/@rem;
+      height: 113/@rem;
+      position: absolute;
+      left: 2.1rem;
+      z-index: 2;
+      img{
+        width: 278/@rem;
+      }
+    }
+    .star{
+      transform: rotate(-11deg);
+      width: 314/@rem;
+      height: 320/@rem;
+      background: #bfe;
+      position: absolute;
+      top: 1.32rem;
+      left: 0.94rem;
+      z-index: 1;
+      img{
+        width: 314/@rem;
+        height: 320/@rem;
+      }
+    }
+  }
+  .yellow{
+    width: 441/@rem;
+    height: 499/@rem;
+    position: absolute;
+    top: 40/@rem;
+    right: 0;
+    z-index: 2;
+    background: url("../image/yellow.png") no-repeat center;
+    background-size: 441/@rem 499/@rem;
+    .beard{
+      width: 236/@rem;
+      height: 130/@rem;
+      position: absolute;
+      top: 5/@rem;
+      right: 110/@rem;
+      z-index: 3;
+      img{
+        width: 236/@rem;
+      }
+    }
+    .myphoto{
+      transform: rotate(25.5deg);
+      width: 287/@rem;
+      height: 287/@rem;
+      background: #bfe;
+      position: absolute;
+      top: 1.36rem;
+      right: 1.2rem;
+      z-index: 1;
+      img{
+        width: 287/@rem;
+        height: 287/@rem;
+      }
+    }
+  }
+}
+#camera{
+  position: absolute;
+  top: 630/@rem;
+  right: 40/@rem;
+  z-index: 10;
+  .top{
+    width: 169/@rem;
+    height: 141/@rem;
+    background: url("../image/cameraS.png") no-repeat center;
+    background-size: 169/@rem 141/@rem;
+    img{
+      width: 124/@rem;
+      margin: 80/@rem 22/@rem 0;
+    }
+  }
+  .bottom{
+    width: 169/@rem;
+    height: 107/@rem;
+    overflow: hidden;
+    background: url("../image/cameraX.png") no-repeat top center;
+    background-size: 169/@rem 17/@rem;
+    img{
+      width:104/@rem;
+      margin: 0 33/@rem;
+      animation: myanimation 4s linear infinite alternate;
+    }
+  }
+}
+.content{
+  font-weight: 600;
+  font-size: 30/@rem;
+  width: 750/@rem;
+  height: 634/@rem;
+  background: url("../image/backg.png") no-repeat bottom center;
+  background-size: 750/@rem;
+  position: relative;
+  top: -1.8rem;
+  .title{
+    position: absolute;
+    left:  205/@rem;
+    top: 20/@rem;
+    box-sizing: border-box;
+    width: 250/@rem;
+    height: 175/@rem;
+    background: url("../image/dialog.png") no-repeat center;
+    background-size: 250/@rem 175/@rem;
+    z-index: 9;
+    padding: .8rem 0.4rem 0.8rem 1.4rem;
+    line-height: 2rem;
+  }
+
+  .main{
+    position: absolute;
+    left: 280/@rem;
+    top: 200/@rem;
+
+    .result{
+      width: 420/@rem;
+      div{
+        margin-top: 10/@rem;
+      }
+      .name{
+        font-size: 36/@rem;
+        font-weight: bold;
+      }
+      .information{
+        font-size: 30/@rem;
+        font-weight: bold;
+        color: #184f6a;
+      }
+      .similar{
+        margin-top: 0/@rem;
+        font-size: 32/@rem;
+        font-weight: bold;
+        color: #ce0b17;
+        span{
+          font-size: 45/@rem;
+          font-family: 'Arial';
+        }
+      }
+      .evaluate{
+        font-size: 24/@rem;
+        font-weight: 100;
+        color: #fff;
+      }
+    }
+    .introduce{
+      width: 400/@rem;
+      margin-top: 50/@rem;
+      line-height: 40/@rem;
+      font-size: 30/@rem;
+      letter-spacing: 10/@rem;
+    }
+  }
+  .girl{
+    width: 235/@rem;
+    height: 644/@rem;
+    position: absolute;
+    left: 20/@rem;
+    top: -10/@rem;
+  }
+  .share{
+    background: url("../image/share.png") no-repeat center;
+    background-size: 315/@rem 127/@rem;
+    padding: 0.6rem 0 0 15/@rem;
+    //position: absolute;
+    //bottom: 0;
+    //right: 36/@rem;
+    float: right;
+    width: 315/@rem;
+    height: 127/@rem;
+    font-size: 20/@rem;
+    font-weight: bold;
+  }
+}
+.bounced{
+  position: fixed;
+  bottom: -266/@rem;
+  left: 0;
+  width: 750/@rem;
+  height: 266/@rem;
+  transition: 0.3s;
+  transform: translateZ(0.001px);
+  background: url("../image/background2.png") no-repeat center;
+  background-size: 750/@rem 266/@rem;
+  z-index: 20;
+  .photo1{
+    width: 115/@rem;
+  }
+  .photo2{
+    width: 188/@rem;
+  }
+  .phot{
+    float: left;
+    margin: 80/@rem 130/@rem 0 100/@rem;
+    width: 204/@rem;
+    img{
+      display: block;
+      margin: 20/@rem auto;
+    }
+  }
+  .came{
+    float: left;
+    margin: 30/@rem 0 0 0;
+    width: 204/@rem;
+    img{
+      display: block;
+      margin: 20/@rem auto;
+    }
+  }
+}
+.hide{
+  display: none;
+}
+.translate{
+  transform: translateY(-266/@rem);
+}
+#load{
+  width: 750/@rem;
+  height: 1334/@rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background: rgba(0,0,0,.9);
+  z-index: 12;
+  img{
+    width: 654/@rem;
+    height: 638/@rem;
+  }
+}
+#loading {
+  width: 750/@rem;
+  height: 1334/@rem;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 11;
+  background: rgba(0,0,0,.5);
+  text-align: center;
+}
+#loading span {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+#loading img {
+  vertical-align: middle;
+  width: 2rem;
+}
+@keyframes myanimation
+{
+  0%   {transform: translateY(-40px);}
+  40%  {transform: translateY(0);}
+  60%  {transform: translateY(0);}
+  100% {transform: translateY(-40px);}
+}

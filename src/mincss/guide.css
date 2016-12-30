@@ -1,0 +1,45 @@
+*{margin:0;padding:0}
+body,html{width:750px;overflow-x:hidden}
+.box{width:248px;height:265px;border:1px solid #fff;float:left}
+.box1{animation:myanimation 2s linear infinite alternate;-webkit-animation:myanimation 2s linear infinite alternate}
+.box2{animation:myanimation2 2s linear infinite alternate}
+@keyframes myanimation2{0%{background:rgba(255,255,255,.7)}
+50%{background:rgba(255,255,255,.2)}
+100%{background:rgba(255,255,255,.7)}
+}
+@-moz-keyframes myanimation2{0%{background:rgba(255,255,255,.7)}
+50%{background:rgba(255,255,255,.2)}
+100%{background:rgba(255,255,255,.7)}
+}
+@-webkit-keyframes myanimation2{0%{background:rgba(255,255,255,.7)}
+50%{background:rgba(255,255,255,.2)}
+100%{background:rgba(255,255,255,.7)}
+}
+@-o-keyframes myanimation2{0%{background:rgba(255,255,255,.7)}
+50%{background:rgba(255,255,255,.2)}
+100%{background:rgba(255,255,255,.7)}
+}
+@keyframes myanimation{0%{background:rgba(255,255,255,.2)}
+50%{background:rgba(255,255,255,.7)}
+100%{background:rgba(255,255,255,.2)}
+}
+@-moz-keyframes myanimation{0%{background:rgba(255,255,255,.7)}
+50%{background:rgba(255,255,255,.2)}
+100%{background:rgba(255,255,255,.7)}
+}
+@-webkit-keyframes myanimation{0%{background:rgba(255,255,255,.7)}
+50%{background:rgba(255,255,255,.2)}
+100%{background:rgba(255,255,255,.7)}
+}
+@-o-keyframes myanimation{0%{background:rgba(255,255,255,.7)}
+50%{background:rgba(255,255,255,.2)}
+100%{background:rgba(255,255,255,.7)}
+}
+.title{font:58px '方正黑体简体';position:absolute;top:345px;left:125px}
+.main{font:43px '方正幼线简体';position:absolute;top:480px;left:125px}
+.uploading{font:26px/50px '方正幼线简体';position:absolute;top:730px;left:125px;text-align:center;width:200px;height:50px;border:1px solid #000;background:rgba(255,255,255,0)}
+.uploading a{text-decoration:none;color:#000}
+.loading{width:100%;height:100%;position:fixed;z-index:11;background:rgba(255,255,255,1);text-align:center}
+.loading span{height:100%;vertical-align:middle;display:inline-block}
+.loading img{vertical-align:middle}
+.hide{visibility:hidden}
