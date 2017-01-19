@@ -1,0 +1,481 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px"黑体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+a{color:#0f0f0f;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:underline}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+.img-mid{
+    text-align: center;
+}
+.img-mid span{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.img-mid img{
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+}
+.hide{
+    display: none;
+}
+/*头部，宽度100%不需要改动*/
+.header{
+    width: 100%;
+    height: 100px;
+    background: rgba(255,255,255,0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+/*导航栏宽度需要做处理*/
+.head{
+    width: 750px;
+    margin: 0 auto;
+    border-bottom: 1px solid #5972ff;
+    position: relative;
+}
+
+.logo{
+    width: 250px;
+    float: left;
+}
+.logo img{
+    width: 250px;
+    height: 100px;
+}
+.menu{
+    float: right;
+}
+.option{
+    float: left;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 100px;
+    line-height: 100px;
+}
+.select{
+    border-bottom: 3px solid #5972ff;
+}
+/*轮播图*/
+.nav{
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+.nav-wrap{
+    width: 500%;
+    height: 100%;
+}
+.point{
+    position: absolute;
+    left: 30px;
+    bottom: -800px;
+}
+.point li{
+    float: left;
+    width: 80px;
+    height: 5px;
+    border-radius: 10px;
+    background: #999988;
+    opacity: .3;
+    filter:Alpha(opacity=30);
+    margin: 10px;
+}
+.point .selected{
+    opacity: 1;
+    filter:Alpha(opacity=100);
+}
+.item{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.item img{
+    height: 100%;
+    width: 100%;
+}
+.pre{
+    position: absolute;
+    width: 50px;
+    height: 20%;
+    background: #999988;
+    top: 40%;
+    left: 20px;
+}
+.next{
+    position: absolute;
+    width: 50px;
+    height: 20%;
+    background: #999988;
+    top: 40%;
+    right: 20px;
+}
+
+
+/*首页主要内容*/
+h2{
+    text-align: center;
+    line-height: 100px;
+}
+h2 img{
+    width: 15%;
+}
+.content{
+    background: #fff;
+    width: 100%;
+}
+.content1{
+    margin: 0 auto 50px;
+    width: 750px;
+}
+.icons img{
+    width: 100%;
+    margin: 50px 0 ;
+}
+.product{
+    width: 33.3%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.product img{
+    width: 100%;
+    transition: .5s cubic-bezier(.22,.92,.31,.98);
+    -moz-transition: .5s cubic-bezier(.22,.92,.31,.98);	/* Firefox 4 */
+    -webkit-transition: .5s cubic-bezier(.22,.92,.31,.98);	/* Safari 和 Chrome */
+    -o-transition: .5s cubic-bezier(.22,.92,.31,.98);	/* Opera */
+}
+.detail{
+    width: 100%;
+    height: 100%;
+    background: url('../img/bg.png');
+    -webkit-transition:.5s;
+    transition: .5s;
+    padding: 15%;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: whitesmoke;
+    line-height: 150%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+}
+.product .img-title{
+    width: 30%;
+    position: absolute;
+    bottom: 12%;
+    left: 35%;
+    z-index: 20;
+}
+.detail p{
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: 1s;
+}
+.product:hover .detail{
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+.product:hover p{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.product:hover img{
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+}
+.content2{
+    margin: 0 auto;
+    width: 750px;
+}
+.partner-wrap{
+    position: relative;
+    margin-top: 50px;
+    height: 800px;
+}
+.rhombus{
+    position: absolute;
+    background: #dee3ff;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    width: 0px;
+    height: 0px;
+    padding: 5.1%;
+    transform: rotateY(0deg) rotateZ(45deg);
+    -webkit-transform: rotateY(0deg) rotateZ(45deg);
+    -ms-transform: rotateY(0deg) rotateZ(45deg);
+}
+.rhombus1{
+    left: 21.5%;
+    top: 10.75%;
+}
+.rhombus2{
+    left: 64.5%;
+    top: 10.75%;
+}
+.rhombus3{
+    left: 0px;
+    top: 21.5%;
+}
+.rhombus4{
+    left: 43%;
+    top: 21.5%;
+}
+.rhombus5{
+    left: 86%;
+    top: 21.5%;
+}
+.rhombus6{
+    left: 21.5%;
+    top: 32.25%;
+}
+.rhombus7{
+    left: 64.5%;
+    top: 32.25%;
+}
+.rhombus8{
+    left: 43%;
+    top: 43%;
+}
+.rhombus9{
+    left: 21.5%;
+    top: 53.75%;
+}
+.rhombus10{
+    left: 64.5%;
+    top: 53.75%;
+}
+.partner{
+    position: absolute;
+    transition: .5s;
+    -moz-transition: .5s;	/* Firefox 4 */
+    -webkit-transition: .5s;	/* Safari 和 Chrome */
+    -o-transition: .5s;	/* Opera */
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    width: 0px;
+    height: 0px;
+    padding: 5.1%;
+    transform: rotateY(0deg) rotateZ(45deg);
+    -webkit-transform: rotateY(0deg) rotateZ(45deg);
+    -ms-transform: rotateY(0deg) rotateZ(45deg);
+}
+.partner img{
+    width: 100%;
+}
+.partner:hover{
+    transform: rotateY(180deg) rotateZ(45deg);
+    -webkit-transform:  rotateY(180deg) rotateZ(45deg);
+    -ms-transform: rotateY(180deg) rotateZ(45deg);
+}
+.partner:hover .back{
+   z-index: 3;
+}
+.partner1{
+    left: 14.3%;
+}
+.partner2{
+    left: 28.7%;
+}
+.partner3{
+    left: 43%;
+}
+.partner4{
+    left: 57.3%;
+}
+.partner5{
+    left: 71.7%;
+}
+.partner6{
+    left: 35.8%;
+    top: 10.75%;
+}
+.partner7{
+    left: 50.2%;
+    top: 10.75%;
+}
+.partner8{
+    left: 14.3%;
+    top: 21.5%;
+}
+.partner9{
+    left: 28.7%;
+    top: 21.5%;
+}
+.partner10{
+    left: 57.3%;
+    top: 21.5%;
+}
+.partner11{
+    left:  71.7%;
+    top: 21.5%;
+}
+.partner12{
+    left: 35.8%;
+    top: 32.25%;
+}
+.partner13{
+    left: 50.2%;
+    top: 32.25%;
+}
+.partner14{
+    left: 28.7%;
+    top: 43%;
+}
+.partner15{
+    left: 57.3%;
+    top: 43%;
+}
+.front{
+    transform: translateZ(1px);
+    -webkit-transform: translateZ(1px);
+    -ms-transform: translateZ(1px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: whitesmoke;
+    top: 0;
+    left: 0;
+}
+.core-technology{
+    width: 100%;
+    height: 750px;
+    background: #e0e0e0;
+}
+
+/*底部*/
+.footer{
+    background: #222222;
+    width: 100%;
+    height: 310px;
+    color: white;
+}
+.footer a{
+    color: #e0e0e0;
+}
+.foot-info{
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 60px;
+    line-height: 25px;
+    text-align: left;
+}
+.foot-info div,.foot-info ul{
+    float: left;
+}
+.info-contact{
+    width: 50%;
+    padding-top: 25px;
+}
+.info-topic p{
+    -webkit-transform: scale(.8);
+            transform: scale(.8);
+    margin-left: -7px;
+}
+.info-technology p{
+    -webkit-transform: scale(.8);
+            transform: scale(.8);
+    margin-left: -15px;
+}
+.info-technology{
+    width: 10%;
+}
+.info-topic{
+    width: 10%;
+}
+.tdcode{
+    width: 30%;
+    text-align: right;
+}
+.foot-link{
+    text-align: center;
+    line-height: 46px;
+    height: 46px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.foot-link a{
+    color: #e0e0e0;
+}
+.foot-copyright{
+    text-align: center;
+    line-height: 46px;
+    -webkit-transform: scale(.8);
+            transform: scale(.8);
+}
+
+/*适配 */
+@media screen and (min-width: 750px){
+    .head{
+        width: 100%;
+    }
+    .content1{
+        width: 100%;
+    }
+    .detail{
+        font-size: 14px;
+    }
+    .content2{
+        width: 100%;
+    }
+    .foot-info{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 992px){
+    .head{
+        width: 100%;
+    }
+    .detail{
+        font-size: 18px;
+    }
+    .option{
+        padding: 0 42px;
+    }
+    .content1{
+        width: 100%;
+    }
+    .content2{
+        width: 100%;
+    }
+    .foot-info{
+        width: 100%;
+    }
+}
+@media screen and (min-width:1200px){
+    .head{
+        width: 1200px;
+    }
+    .detail{
+        font-size: 18px;
+    }
+    .content1{
+        width: 1200px;
+    }
+    .content2{
+        width: 1200px;
+    }
+    .foot-info{
+        width: 1200px;
+    }
+}
